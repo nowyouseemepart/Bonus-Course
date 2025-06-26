@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRPZSQ4SLQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZRPZSQ4SLQ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFast - Our Courses</title>
+    <style>
+        /* Basic styling from previous version */
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        nav { margin-bottom: 30px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #007bff; }
+        h1 { text-align: center; margin-bottom: 40px; }
+        .course-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        footer { text-align: center; margin-top: 50px; }
+
+        /* Styling for Course 1 (dull) */
+        .course-card-dull {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            background-color: #f8f8f8;
+            box-shadow: none; /* No shadow for dullness */
+            color: #555;
+        }
+        .course-card-dull h2 {
+            color: #333;
+        }
+        .course-card-dull .button-dull {
+            background-color: #888;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 10px;
+            display: inline-block;
+            opacity: 0.8;
+        }
+
+        /* Styling for Course 2 (visually appealing) */
+        .course-card-vibrant {
+            border: none; /* No visible border for a cleaner look */
+            border-radius: 12px; /* More rounded */
+            padding: 25px; /* More padding */
+            width: 320px; /* Slightly larger */
+            text-align: center;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient background */
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3); /* Stronger shadow with blue tint */
+            color: white; /* White text for contrast */
+            transform: scale(1); /* Initial scale */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+            cursor: pointer;
+        }
+        .course-card-vibrant:hover {
+            transform: scale(1.03); /* Slight zoom on hover */
+            box-shadow: 0 12px 25px rgba(0, 123, 255, 0.4); /* More pronounced shadow on hover */
+        }
+        .course-card-vibrant h2 {
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Text shadow for depth */
+            margin-bottom: 10px;
+        }
+        .course-card-vibrant p {
+            color: #e0f7fa; /* Lighter white for body text */
+        }
+        .course-card-vibrant .button-vibrant {
+            background-color: #ffc107; /* Bright accent color */
+            color: #333; /* Dark text for contrast on bright button */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 50px; /* Pill-shaped button */
+            margin-top: 20px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+        }
+        .course-card-vibrant .button-vibrant:hover {
+            background-color: #e0a800; /* Darker yellow on hover */
+            transform: translateY(-2px); /* Slight lift */
+        }
+        .course-card-vibrant .icon {
+            font-size: 40px; /* Example icon size */
+            margin-bottom: 15px;
+            color: #fff; /* Icon color */
+        }
+
+        /* Generic course card styling for the third course */
+        .course-card-generic {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .course-card-generic .button-generic {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+    </style>
+    <!-- Font Awesome for icons (optional, but good for visuals) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="course.html">Courses</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <h1>Our Popular Courses</h1>
+    <div class="course-list">
+        <!-- Course 1: Dull and Basic -->
+        <div class="course-card-dull">
+            <h2>Course 1: Foundational Learning</h2>
+            <p>A basic introduction to core concepts, perfect for beginners.</p>
+            <p>Duration: 6 Weeks</p>
+            <p>What you'll get: Core topics, simple exercises.</p>
+            <a href="course1.html" class="button-dull">Learn More</a>
+        </div>
+
+        <!-- Course 2: Visually Appealing -->
+        <div class="course-card-vibrant">
+            <div class="icon"><i class="fas fa-rocket"></i></div> <!-- Example icon -->
+            <h2>Course 2: Advanced Skill Mastery</h2>
+            <p>Dive deep with advanced topics, interactive projects, and live sessions.</p>
+            <p>Duration: 12 Weeks</p>
+            <p>What you'll get: Expert-led modules, immersive labs, community support, certification.</p>
+            <a href="course2.html" class="button-vibrant">Discover More</a>
+        </div>
+
+        <!-- Remaining course as generic -->
+        <div class="course-card-generic">
+            <h2>Digital Marketing Pro</h2>
+            <p>Strategies for SEO, SEM, social media, and content marketing.</p>
+            <p>Duration: 6 Weeks</p>
+            <a href="register.html" class="button-generic">Enroll Now</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 LearnFast. All rights reserved.</p>
+    </footer>
+</body>
+</html>
